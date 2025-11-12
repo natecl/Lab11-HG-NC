@@ -39,7 +39,7 @@ class TestCalculator(unittest.TestCase):
     def test_logarithm(self): # 3 assertions
         self.assertAlmostEqual(log(10, 10), 1)
         self.assertAlmostEqual(log(100, 10), 2)
-        self.assertAlmostEqual(log(1, 10), 0)
+        self.assertAlmostEqual(log(8, 2), 3)
 
     def test_log_invalid_base(self): # 1 assertion
         with self.assertRaises(ValueError):
@@ -73,4 +73,5 @@ class TestCalculator(unittest.TestCase):
 
 # Do not touch this
 if __name__ == "__main__":
+
     unittest.main()
