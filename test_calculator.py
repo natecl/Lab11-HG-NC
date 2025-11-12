@@ -26,9 +26,9 @@ class TestCalculator(unittest.TestCase):
         self.assertAlmostEqual(mul(678, 0), 0)
 
     def test_divide(self):  # 3 assertions
-        self.assertEqual(div(4, 2), 2)
-        self.assertEqual(div(-100, 10), -10)
-        self.assertEqual(div(0, 50), 0)
+        self.assertEqual(div(4, 2), 0.5)
+        self.assertEqual(div(10, -100), -10)
+        self.assertEqual(div(50, 0), 0)
 
     # ##########################
 
@@ -66,6 +66,7 @@ class TestCalculator(unittest.TestCase):
         # Test basic function
         with self.assertRaises(ValueError):
             square_root(-45)
+        with self.assertRaises(ValueError):
             square_root(-1)
         self.assertEqual(square_root(9), 3)
     ##########################
