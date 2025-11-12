@@ -11,10 +11,9 @@ One function per operation, in order.
 import math
 
 def square_root(a):
-    try:
-        return math.sqrt(a)
-    except ValueError:
-        return ValueError
+    if a<0:
+        raise ValueError("invalid argument for square root")
+    return math.sqrt(a)
 def hypotenuse(a, b):
     return math.hypot(a, b)
 
