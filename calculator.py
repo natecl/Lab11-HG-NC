@@ -1,4 +1,7 @@
-https://github.com/natecl/Lab11-HG-NC.git
+# https://github.com/natecl/Lab11-HG-NC.git
+# Partner 1: Hanna Green
+# Partner 2: Nathan Chin-Lue
+
 """
 calculator.py
 - Defines functions used to create a simple calculator
